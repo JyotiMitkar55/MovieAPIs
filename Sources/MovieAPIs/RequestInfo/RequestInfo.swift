@@ -9,8 +9,14 @@
 import UIKit
 
 public struct FetchMoviesReqInfo {
-    public var language: String = ""
-    public var page: String = ""
+    
+    public var language = String()
+    public var page = String()
+    
+    public init(){
+        self.language = ""
+        self.page = ""
+    }
 }
 
 

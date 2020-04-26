@@ -85,6 +85,7 @@ class ServiceManager:NSObject,URLSessionTaskDelegate {
             completionHandler(.cancelAuthenticationChallenge, nil)
         }*/
         
+        
         let credential:URLCredential = URLCredential(trust: serverTrust!)
         completionHandler(.useCredential, credential)
     }

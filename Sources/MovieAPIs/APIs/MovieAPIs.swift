@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MoviesRestFulAPI: NSObject {
+public class MoviesRestFulAPI: NSObject {
     
     class func fetchMovieListWith(reqInfo :FetchMoviesReqInfo, completionHandler:@escaping (_ isSuccess :Bool, _ response :[String:Any]?, _ error:Error?) -> ()) {
         

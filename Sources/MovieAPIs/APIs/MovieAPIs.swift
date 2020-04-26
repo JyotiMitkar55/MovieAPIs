@@ -1,9 +1,7 @@
 //
-//  MGRestFulAPI.swift
-//  DBSIndia
+//  MoviesRestFulAPI.swift
 //
 //  Created by Jyoti on 29/01/18.
-//  Copyright © 2018 Mind Gate Solutions pvt ltd. All rights reserved.
 //
 
 import UIKit

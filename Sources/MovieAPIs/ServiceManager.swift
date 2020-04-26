@@ -1,9 +1,7 @@
 //
 //  ServiceManager.swift
-//  DBSIndia
 //
 //  Created by Jyoti on 22/01/18.
-//  Copyright © 2018 Mind Gate Solutions pvt ltd. All rights reserved.
 //
 
 import UIKit

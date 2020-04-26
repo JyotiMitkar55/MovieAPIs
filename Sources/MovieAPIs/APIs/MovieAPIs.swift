@@ -10,7 +10,7 @@ import UIKit
 
 public class MoviesRestFulAPI: NSObject {
     
-    class func fetchMovieListWith(reqInfo :FetchMoviesReqInfo, completionHandler:@escaping (_ isSuccess :Bool, _ response :[String:Any]?, _ error:Error?) -> ()) {
+    public class func fetchMovieListWith(reqInfo :FetchMoviesReqInfo, completionHandler:@escaping (_ isSuccess :Bool, _ response :[String:Any]?, _ error:Error?) -> ()) {
         
         var dictionary = [String:Any]()
         dictionary[ApiKeys.apiKey] = API_KEY
@@ -25,7 +25,7 @@ public class MoviesRestFulAPI: NSObject {
         }
     }
     
-    class func getConfigurations(completionHandler:@escaping (_ isSuccess :Bool, _ response :[String:Any]?, _ error:Error?) -> ()) {
+    public class func getConfigurations(completionHandler:@escaping (_ isSuccess :Bool, _ response :[String:Any]?, _ error:Error?) -> ()) {
         
         var dictionary = [String:Any]()
         dictionary[ApiKeys.apiKey] = API_KEY

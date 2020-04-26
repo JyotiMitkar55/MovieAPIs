@@ -66,9 +66,14 @@ class ServiceManager:NSObject,URLSessionTaskDelegate {
         SecTrustEvaluate(serverTrust!, &result)
         let isServerTrusted:Bool = (result == SecTrustResultType.unspecified || result == SecTrustResultType.proceed)
         
+        
+        
         // Get local and remote cert data
-        /*let remoteCertificateData:NSData? = SecCertificateCopyData(certificate!)
-        let pathToCert:String? = Bundle.main.path(forResource: "server", ofType: "cer")!
+        let remoteCertificateData:NSData? = SecCertificateCopyData(certificate!)
+        //let pathToCert:String? = Bundle.main.path(forResource: "server", ofType: "cer")!
+         
+        let packageManagerBundle = Bundle(for: type(of: self))
+        let pathToCert:String? = packageManagerBundle.path(forResource: "server", ofType: "cer")
         
         let localCertificate:Data? = NSData(contentsOfFile: pathToCert!)! as Data
                 
@@ -83,10 +88,9 @@ class ServiceManager:NSObject,URLSessionTaskDelegate {
             print("CERTIFICATE DOES MATCHE")
             
             completionHandler(.cancelAuthenticationChallenge, nil)
-        }*/
+        }
         
-        
-        let credential:URLCredential = URLCredential(trust: serverTrust!)
-        completionHandler(.useCredential, credential)
+        //let credential:URLCredential = URLCredential(trust: serverTrust!)
+        //completionHandler(.useCredential, credential)
     }
 }

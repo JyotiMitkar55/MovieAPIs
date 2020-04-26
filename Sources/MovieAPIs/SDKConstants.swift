@@ -6,8 +6,6 @@
 //  Copyright © 2018 Mind Gate Solutions pvt ltd. All rights reserved.
 
 let API_KEY                                     = "77829b2d614e43119afbeb8466be9da2"
-
-
 let REQUEST_TIME_OUT                            = 60
 
 
